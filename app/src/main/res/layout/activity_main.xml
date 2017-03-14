@@ -4,31 +4,188 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
     tools:context="com.example.skoop.quizzo.MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
 
-<RadioGroup
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="85dp"
+            android:background="@drawable/golang" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/Q1" />
+
+        <RadioGroup
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
 
     <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/close_to_c_yes" />
+        android:id="@+id/RadioButtonQ1True"
+        style="@style/RadioButton"
+        android:text="@string/isTrue" />
 
     <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/close_to_c_no"/>
+        android:id="@+id/RadioButtonQ1False"
+        style="@style/RadioButton"
+        android:text="@string/isFalse" />
+
 
 </RadioGroup>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/Q2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <CheckBox
+                android:id="@+id/checkBoxQ2A"
+                style="@style/CheckBox1"
+                android:text="@string/Int" />
+
+            <CheckBox
+                android:id="@+id/checkBoxQ2B"
+                style="@style/CheckBox1"
+                android:layout_toRightOf="@+id/checkBoxQ2A"
+                android:text="@string/Boolean" />
+
+            <CheckBox
+                android:id="@+id/checkBoxQ2C"
+                style="@style/CheckBox1"
+                android:layout_below="@+id/checkBoxQ2B"
+                android:text="@string/String" />
+
+            <CheckBox
+                android:id="@+id/checkBoxQ2D"
+                style="@style/CheckBox1"
+                android:layout_below="@+id/checkBoxQ2B"
+                android:layout_toRightOf="@+id/checkBoxQ2A"
+                android:text="@string/Float" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/Q3" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:gravity="center"
+            android:hint="Enter Year"
+            android:inputType="date" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/Q4" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RadioButtonQ4True"
+                style="@style/RadioButton"
+                android:text="@string/isTrue" />
+
+            <RadioButton
+                android:id="@+id/RadioButtonQ4False"
+                style="@style/RadioButton"
+                android:text="@string/isFalse" />
+
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <TextView
+            style="@style/Question"
+            android:text="@string/Q5" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ5A"
+            style="@style/CheckBox2"
+            android:text="@string/ios_dev" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ5D"
+            style="@style/CheckBox2"
+            android:text="@string/game_dev" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ5B"
+            style="@style/CheckBox2"
+            android:text="@string/machine_learning" />
+
+        <CheckBox
+            android:id="@+id/checkBoxQ5C"
+            style="@style/CheckBox2"
+            android:text="@string/web_dev" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_margin="10dp"
+            android:background="@color/black"></View>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
+
 </ScrollView>

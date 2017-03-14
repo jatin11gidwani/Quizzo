@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Quizzo</string>
+    <string name="isTrue">True</string>
+    <string name="isFalse">False</string>
+    <string name="Q1">1- Is Golang made by Google ?</string>
+    <string name="Q2">2- Golang has the following DataTypes ? </string>
+    <string name="Q3">3- Golang released in Year ?</string>
+    <string name="Q4">4- Is Golang self hosted ?</string>
+    <string name="Q5">5- Golang is used for ?</string>
+    <string name="Q6">6- Is Golang made by Google ?</string>
+    <string name="Int">Integer</string>
+    <string name="Float">Float</string>
+    <string name="Boolean">Boolean</string>
+    <string name="String">String</string>
+    <string name="web_dev">Web Development</string>
+    <string name="game_dev">Game Development</string>
+    <string name="machine_learning">Machine Learning</string>
+    <string name="ios_dev">IOS Development</string>
+    <string name="submit">Submit</string>
+
 </resources>
