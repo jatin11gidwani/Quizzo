@@ -18,42 +18,44 @@
         <ImageView
             android:layout_width="200dp"
             android:layout_height="85dp"
-            android:background="@drawable/golang" />
+            android:background="@drawable/golang"
+            android:contentDescription="@string/golang" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <TextView
             style="@style/Question"
             android:text="@string/Q1" />
 
         <RadioGroup
-    android:layout_width="wrap_content"
+            android:id="@+id/radioGroupQ2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
-    <RadioButton
-        android:id="@+id/RadioButtonQ1True"
-        style="@style/RadioButton"
-        android:text="@string/isTrue" />
+            <RadioButton
+                android:id="@+id/RadioButtonQ1True"
+                style="@style/RadioButton"
+                android:text="@string/isTrue" />
 
-    <RadioButton
-        android:id="@+id/RadioButtonQ1False"
-        style="@style/RadioButton"
-        android:text="@string/isFalse" />
+            <RadioButton
+                android:id="@+id/RadioButtonQ1False"
+                style="@style/RadioButton"
+                android:checked="true"
+                android:text="@string/isFalse" />
 
-
-</RadioGroup>
+        </RadioGroup>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <TextView
             style="@style/Question"
@@ -64,7 +66,6 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal">
 
-
             <CheckBox
                 android:id="@+id/checkBoxQ2A"
                 style="@style/CheckBox1"
@@ -73,7 +74,8 @@
             <CheckBox
                 android:id="@+id/checkBoxQ2B"
                 style="@style/CheckBox1"
-                android:layout_toRightOf="@+id/checkBoxQ2A"
+                android:layout_toEndOf="@+id/checkBoxQ2A"
+                android:layout_toRightOf="@id/checkBoxQ2A"
                 android:text="@string/Boolean" />
 
             <CheckBox
@@ -86,6 +88,7 @@
                 android:id="@+id/checkBoxQ2D"
                 style="@style/CheckBox1"
                 android:layout_below="@+id/checkBoxQ2B"
+                android:layout_toEndOf="@id/checkBoxQ2A"
                 android:layout_toRightOf="@+id/checkBoxQ2A"
                 android:text="@string/Float" />
 
@@ -95,32 +98,33 @@
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <TextView
             style="@style/Question"
             android:text="@string/Q3" />
 
         <EditText
+            android:id="@+id/ans3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:cursorVisible="false"
             android:gravity="center"
-            android:hint="Enter Year"
+            android:hint="@string/enter_year"
             android:inputType="date" />
-
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <TextView
             style="@style/Question"
             android:text="@string/Q4" />
 
         <RadioGroup
+            android:id="@+id/radioGroupQ4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -134,17 +138,16 @@
             <RadioButton
                 android:id="@+id/RadioButtonQ4False"
                 style="@style/RadioButton"
+                android:checked="true"
                 android:text="@string/isFalse" />
 
-
         </RadioGroup>
-
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <TextView
             style="@style/Question"
@@ -156,35 +159,44 @@
             android:text="@string/ios_dev" />
 
         <CheckBox
-            android:id="@+id/checkBoxQ5D"
+            android:id="@+id/checkBoxQ5B"
             style="@style/CheckBox2"
             android:text="@string/game_dev" />
 
         <CheckBox
-            android:id="@+id/checkBoxQ5B"
+            android:id="@+id/checkBoxQ5C"
             style="@style/CheckBox2"
             android:text="@string/machine_learning" />
 
         <CheckBox
-            android:id="@+id/checkBoxQ5C"
+            android:id="@+id/checkBoxQ5D"
             style="@style/CheckBox2"
             android:text="@string/web_dev" />
-
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_margin="10dp"
-            android:background="@color/black"></View>
+            android:background="@color/black" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="submitAnswer"
             android:text="@string/submit" />
 
         <TextView
+            android:id="@+id/answer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
     </LinearLayout>
 

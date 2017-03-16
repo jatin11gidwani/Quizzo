@@ -2,6 +2,11 @@
   <dictionary name="Skoop">
     <words>
       <w>golang</w>
+      <w>isans</w>
+      <w>isboolean</w>
+      <w>isfloat</w>
+      <w>isinteger</w>
+      <w>isstring</w>
       <w>quizzo</w>
     </words>
   </dictionary>

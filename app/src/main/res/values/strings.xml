@@ -4,7 +4,7 @@
     <string name="isFalse">False</string>
     <string name="Q1">1- Is Golang made by Google ?</string>
     <string name="Q2">2- Golang has the following DataTypes ? </string>
-    <string name="Q3">3- Golang released in Year ?</string>
+    <string name="Q3">3- Current version of Golang is ? ?</string>
     <string name="Q4">4- Is Golang self hosted ?</string>
     <string name="Q5">5- Golang is used for ?</string>
     <string name="Q6">6- Is Golang made by Google ?</string>
@@ -17,5 +17,7 @@
     <string name="machine_learning">Machine Learning</string>
     <string name="ios_dev">IOS Development</string>
     <string name="submit">Submit</string>
+    <string name="golang">Golang</string>
+    <string name="enter_year">Enter Year</string>
 
 </resources>
